@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Submission Your Work</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">SHK</h2>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Design</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <dic class="form">
+                <h2>Work Sheet</h2>
+                <input type="User Name" name="User Name" placeholder="Enter Emp ID">
+                <input type="Task" name="Task" placeholder="Enter Task Detail">
+                <label for="myFile"  class="label-text" >(Upload your document under 2Mb)</label>
+                <input type="file" id="myFile" >
+                <label for="myFile2" class="label-text2">(Upload your text file under 1Mb)</label>
+                <input type="file" id="myFile2">
+                <button class="btn" id="btn-submit"><a href="#">Submit</a></button>
+            </dic>
+        </div>
+    </div>
+</body>
+<script>
+  const sumbit=document.getElementById("btn-submit");
+  sumbit.addEventListener("mousedown",()=>{
+      console.log("Running");
+      var file=document.getElementById("myFile");
+      var file2=document.getElementById("myFile2");
+          if((file.files.length || file2.files.length) !==0)
+          alert("Success:Your files has been sumbitted");
+          else
+          alert("Error!:Select at least one file");
+  })
+        
+</script>
+
+</html>
