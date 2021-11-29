@@ -167,16 +167,20 @@ ul li.active a{
 .btn{
     width: 240px;
     height: 40px;
+    font-family: sans-serif;
+    text-align: center;
+    font-style: bold;
     background: orangered;
     border: none;
     margin-top: 30px;
-    font-size: 18px;
+    font-size: 20px;
     border-radius: 10px;
     cursor: pointer;
     columns: white;
     position: absolute;
     top: 268px;
     left: 34px;
+    font-weight: bold;
 
 }
 
